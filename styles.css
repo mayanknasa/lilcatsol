@@ -17,11 +17,14 @@ body, html {
     margin-bottom: 20px;
     flex-direction: column;
     gap: 10px;
+    flex-wrap: wrap;
   }
   
   .canvas-container {
     display: grid;
     place-items: center;
+    max-width: 500px;
+    max-height: 500px;
   }
   
   canvas {
@@ -51,3 +54,11 @@ body, html {
     background-color: #0056b3;
   }
   
+  @media only screen and (max-width: 600px) {
+    .canvas-container {
+      display: grid;
+      place-items: center;
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
