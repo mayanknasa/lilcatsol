@@ -388,8 +388,15 @@ header h1 {
   text-shadow: 0 0 5px #000;
 }
 @media (max-width: 768px) {
+  header{
+    display: flex;
+    align-items: center;
+  }
   header h1 {
-    display: none;
+    font-size: 25px;
+  }
+  .playground_root__26b6n{
+    row-gap: 8px;
   }
 }
 header .playground_instruction__XYzhW {
