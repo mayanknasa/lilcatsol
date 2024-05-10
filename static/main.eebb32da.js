@@ -9254,7 +9254,7 @@
         Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
         Object.defineProperty(e, "__esModule", { value: !0 });
     }),
-    (n.p = "/"),
+    (n.p = ""),
     (function () {
       var e = { 179: 0 };
       n.f.j = function (t, r) {
