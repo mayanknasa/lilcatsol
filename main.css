@@ -2,7 +2,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   size: 2rem;
-  font-family: Inter, sans-serif;
   margin: 0;
   overflow: hidden;
   touch-action: none;
@@ -166,6 +165,7 @@ html {
   margin: 0 auto;
   width: 100%;
   padding: 0 0 16px 0;
+  max-width: 100%;
 }
 .gridContainer_root__L1vs4 {
   border: 2px solid#000;
@@ -381,11 +381,11 @@ header {
   width: 100%;
 }
 header h1 {
-  color: #ffdf3a;
-  font-family: inherit;
   font-size: 48px;
   line-height: 0px;
-  text-shadow: 0 0 5px #000;
+    font-weight: bold;
+    -webkit-text-stroke: 3px #000;
+    color: #fff;
 }
 @media (max-width: 768px) {
   header{
@@ -394,6 +394,7 @@ header h1 {
   }
   header h1 {
     font-size: 25px;
+    -webkit-text-stroke: 1px #000;
   }
   .playground_root__26b6n{
     row-gap: 8px;
@@ -587,3 +588,13 @@ header .playground_instruction__XYzhW b {
   height: 100%;
 }
 /*# sourceMappingURL=main.0a1d6807.css.map*/
+.page-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-content{
+  height: 100px;
+  font-size: 100px;
+  color: #000;
+}

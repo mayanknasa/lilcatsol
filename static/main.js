@@ -10598,7 +10598,7 @@
                         g.drawImage(c, w, k, A, y),
                         (S = h.toDataURL("image/png")),
                         ((E = document.createElement("a")).download =
-                          "composite.png"),
+                          "composite"+`${new Date().getTime()}.png`),
                         (E.href = S),
                         E.click();
                     case 32:
