@@ -9397,7 +9397,7 @@
         p = "canvas_reset__SKdZL",
         m = "canvas_img-canvas-wrapper__s1bLi",
         h = n.p + "cap.PNG",
-        g = n.p + "mgl2.5cbc0d230a0bf7e040f7.png",
+        g = n.p + "lilcat-text.png",
         v = n.p + "mgl3.f4e0b1c1d693e7bb8e0e.png",
         A = n.p + "mgl4.94c69c36b7e84f7f4cea.png",
         y = n.p + "mgl5.d8dd65a4ecd392c16022.png",
@@ -11275,7 +11275,7 @@
           children: [
             (0, ye.jsxs)("header", {
               children: [
-                (0, ye.jsx)("h1", { children: "LILCAT" }),
+                (0, ye.jsx)("h1", { children: "$LILCAT" }),
                 (0, ye.jsxs)("span", {
                   className: lt.instruction,
                   children: [
