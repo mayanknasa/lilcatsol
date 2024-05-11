@@ -4,7 +4,7 @@
 .gridContainer_number-of-el__ssBLH{
     display: none !important;
 }
-.gridContainer_root__L1vs4 .gridContainer_grid-container__Z2HEq,.stickerGenerator_root__ya9lG:not(:first-child):not(:nth-child(2)){
+.gridContainer_root__L1vs4 .gridContainer_grid-container__Z2HEq,.stickerGenerator_root__ya9lG:not(:first-child):not(:nth-child(2)):not(:nth-child(3)){
     display: none;
 }
 
