@@ -9409,7 +9409,7 @@
         x = n.p + "mgl11.36c46e4dc9f641883eb9.png",
         C = n.p + "mgl12.09f8722c81a6cb8eb6b5.png",
         P = n.p + "catincap.PNG",
-        _ = n.p + "mglg2.aa68a92e81b09c022fb0.png",
+        _ = n.p + "catincap-fliped.PNG",
         L = n.p + "mgls1.9273be8a872ac31b2279.png",
         N = n.p + "mgls2.6764f09f4da34b5f256b.png",
         T =
