@@ -216,8 +216,8 @@ html {
   }
 }
 .gridContainer_root__L1vs4 .gridContainer_grid-container__Z2HEq {
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 8px;
   box-shadow: 0 0 10px 2px hsla(0, 0%, 100%, 0.1);
   display: none;
@@ -234,6 +234,7 @@ html {
   transition: transform 0.1s ease-in-out;
   transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
   z-index: 2;
+  max-height: 80px;
 }
 @media (max-width: 768px) {
   .gridContainer_root__L1vs4 .gridContainer_grid-container__Z2HEq {
