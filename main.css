@@ -586,7 +586,7 @@ header .playground_instruction__XYzhW b {
   display: none;
   height: 100%;
 }
-/*# sourceMappingURL=main.0a1d6807.css.map*/
+
 .page-container{
   display: flex;
   flex-direction: column;
@@ -596,4 +596,14 @@ header .playground_instruction__XYzhW b {
   height: 100px;
   font-size: 100px;
   color: #000;
+}
+
+.gridContainer_root__L1vs4:last-child {
+  display: none;
+}
+.gridContainer_number-of-el__ssBLH{
+  display: none !important;
+}
+.gridContainer_root__L1vs4 .gridContainer_grid-container__Z2HEq,.stickerGenerator_root__ya9lG:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)){
+  display: none;
 }
