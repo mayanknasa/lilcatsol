@@ -607,6 +607,8 @@ header .playground_instruction__XYzhW b {
 .navigation-item{
   display: inline-block;
   padding: 10px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .navigation-item:hover{
@@ -618,16 +620,13 @@ header .playground_instruction__XYzhW b {
   color: #000;
   all: unset;
   cursor: pointer;
-  font-size: 20px;
 }
 
 
 @media (max-width: 400px) {
-  .navigation-menu{
-    flex-direction: column;
-  }
   .navigation-item{
     padding: 5px;
+    font-size: 15px;
   }
 }
 

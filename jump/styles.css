@@ -97,7 +97,6 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  font-size: 20px;
   color: #000;
   display: flex;
   justify-content: center;
@@ -109,7 +108,9 @@ body {
 .navigation-item{
   display: inline-block;
   padding: 10px;
-  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
 }
 
 .navigation-item:hover{
@@ -123,10 +124,8 @@ body {
 
 
 @media (max-width: 400px) {
-  .navigation-menu{
-    flex-direction: column;
-  }
   .navigation-item{
     padding: 5px;
+    font-size: 15px;
   }
 }

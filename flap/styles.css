@@ -27,7 +27,6 @@ h1 {
 .navigation-menu {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  font-size: 20px;
   color: #000;
   display: flex;
   justify-content: center;
@@ -39,6 +38,8 @@ h1 {
 .navigation-item {
   display: inline-block;
   padding: 10px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .navigation-item:hover {
@@ -55,11 +56,9 @@ a:active {
 }
 
 @media (max-width: 400px) {
-  .navigation-menu {
-    flex-direction: column;
-  }
   .navigation-item {
     padding: 5px;
+    font-size: 15px;
   }
   canvas {
     max-width: -webkit-fill-available;
