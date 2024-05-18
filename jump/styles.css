@@ -1,0 +1,132 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+h1{
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  -webkit-text-stroke: 2px #000;
+  color: #fff;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right,rgb(253,253,158) ,rgb(254,254,226));
+  font-family:sans-serif ;
+  font-weight: bolder;
+}
+.score-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.score-icon{
+  width: 30px;
+  height: 30px;
+}
+.world {
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  margin: 50px;
+}
+
+.score {
+  position: absolute;
+  font-size: 5vmin;
+  right: 8vmin;
+  top: 1vmin;
+  font-weight: 700;
+  /* color: rgb(224, 152, 79); */
+}
+.highscore{
+  position: absolute;
+  font-size: 2vmin;
+  right: 8vmin;
+  top: 5vmin;
+  font-weight: 700;
+  /* color: rgb(224, 152, 79); */
+}
+
+.start-screen {
+  position: absolute;
+  font-size: 2vmin;
+  padding: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  /* color: rgb(230, 165, 100); */
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  --left: 0;
+  position: absolute;
+  width: 300%;
+  bottom: 0;
+  left: calc(var(--left) * 1%)
+}
+
+.dino {
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 30%;
+  bottom: 0;
+}
+
+.navigation-menu{
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  background-image: linear-gradient(to right, #fdfd98, #fff);
+}
+
+.navigation-item{
+  display: inline-block;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.navigation-item:hover{
+  text-decoration: underline;
+}
+
+.navigation-item a, a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+  color: #000;
+}
+
+
+@media (max-width: 400px) {
+  .navigation-menu{
+    flex-direction: column;
+  }
+  .navigation-item{
+    padding: 5px;
+  }
+}
