@@ -15,6 +15,7 @@ let dinoFrame;
 let currentFrameTime;
 let yVelocity;
 let sound = new Audio('imgs/mew.mp3');
+
 export function setupDino() {
   isJumping = false;
   dinoFrame = 0;
@@ -71,11 +72,12 @@ function handleJump(delta) {
 
 function onJump(e) {
   if (e.code !== "Space" || isJumping ) return;
-sound.play();
+  sound.play();
 
   yVelocity = JUMP_SPEED;
   isJumping = true;
 }
+
 function onTouch() {
   if (!isJumping) {
     sound.play();

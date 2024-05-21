@@ -3,6 +3,10 @@ const ctx = canvas.getContext('2d');
 const img = new Image();
 img.src = "./flappy-bird-set.png";
 
+// Audio files
+const bgMusic = new Audio('./bgSound.mp3');
+const tapSound = new Audio('./ontapSound.mp3');
+
 // general settings
 let gamePlaying = false;
 const gravity = .5;
@@ -16,7 +20,7 @@ let index = 0,
     flight, 
     flyHeight, 
     currentScore, 
-    pipe;
+    pipes;
 
 // pipe settings
 const pipeWidth = 78;
@@ -103,6 +107,18 @@ const render = () => {
 setup();
 img.onload = render;
 
-// start game
-document.addEventListener('click', () => gamePlaying = true);
-window.onclick = () => flight = jump;
+// start game and play background music
+document.addEventListener('click', () => {
+  gamePlaying = true;
+  if (bgMusic.paused) {
+    bgMusic.loop = true; // Loop the background music
+    bgMusic.play();
+  }
+});
+
+// play tap sound and make the bird jump
+window.onclick = () => {
+  flight = jump;
+  tapSound.currentTime = 0; // Reset the sound to start
+  tapSound.play();
+};

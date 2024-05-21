@@ -21,15 +21,39 @@ const FOOD_IMAGES = [
   "imgs/food-9.png", 
   "imgs/food-10.png", 
   "imgs/food-11.png",
-   "imgs/food-12.png",
-    "imgs/food-13.png",
-     "imgs/food-14.png",
+  "imgs/food-12.png",
+  "imgs/food-13.png",
+  "imgs/food-14.png",
   "imgs/food-15.png",
-"imgs/food-16.png",
- "imgs/food-17.png",
+  "imgs/food-16.png",
+  "imgs/food-17.png",
 
   // Add more cactus image paths as needed
 ];  
+
+
+const loaderElem = document.querySelector("[data-loader]")
+let loadedImages = 0;
+const imagesElem = document.querySelector("[data-images]")
+
+function imageLoaded() {
+  loadedImages++;
+  if (loadedImages === FOOD_IMAGES.length) {
+    loaderElem.style.display = "none";
+    worldElem.style.display = "block";
+    imagesElem.remove()
+  }
+}
+
+export function waitForImagesToLoad(){
+  FOOD_IMAGES.forEach(imageName => {
+    const img = new Image();
+    img.onload = imageLoaded;
+    img.src = imageName;
+    imagesElem.appendChild(img); // Add images to the content (hidden initially)
+  });
+}
+
 
 let nextCactusTime
 export function setupCactus() {
